@@ -13,7 +13,13 @@
     <div class="container my-sm-5 mt-4">
       <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-6 mx-auto">
-          <h2>Contact Me</h2>
+          <h2
+            unselectable="on"
+            onselectstart="return false;"
+            onmousedown="return false;"
+          >
+            Contact Me
+          </h2>
 
           <div class="shadow-lg p-3 mb-5 bg-body rounded">
             <form
@@ -21,8 +27,20 @@
               method="POST"
               enctype="multipart/form-data"
             >
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://jmftan.github.io/SideProjects/"
+              />
+
               <div class="input-group mb-3 mt-4">
-                <span class="input-group-text" id="inputGroup-sizing-default"
+                <span
+                  unselectable="on"
+                  onselectstart="return false;"
+                  onmousedown="return false;"
+                  class="input-group-text"
+                  id="inputGroup-sizing-default"
                   >Full Name</span
                 >
                 <input
@@ -35,7 +53,12 @@
               </div>
 
               <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default"
+                <span
+                  unselectable="on"
+                  onselectstart="return false;"
+                  onmousedown="return false;"
+                  class="input-group-text"
+                  id="inputGroup-sizing-default"
                   >E-Mail</span
                 >
                 <input
@@ -46,7 +69,12 @@
                   aria-describedby="inputGroup-sizing-default"
                 />
 
-                <span class="input-group-text" id="inputGroup-sizing-default"
+                <span
+                  unselectable="on"
+                  onselectstart="return false;"
+                  onmousedown="return false;"
+                  class="input-group-text"
+                  id="inputGroup-sizing-default"
                   >Phone Number</span
                 >
                 <input
@@ -59,7 +87,12 @@
               </div>
 
               <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect01"
+                <label
+                  unselectable="on"
+                  onselectstart="return false;"
+                  onmousedown="return false;"
+                  class="input-group-text"
+                  for="inputGroupSelect01"
                   >Gender</label
                 >
                 <select
@@ -73,7 +106,12 @@
                   <option value="Female">Female</option>
                 </select>
 
-                <label class="input-group-text" for="inputGroupSelect01"
+                <label
+                  unselectable="on"
+                  onselectstart="return false;"
+                  onmousedown="return false;"
+                  class="input-group-text"
+                  for="inputGroupSelect01"
                   >Status</label
                 >
                 <select
@@ -111,9 +149,7 @@
                 ></textarea>
               </div>
 
-              <button type="submit" class="btn btn-secondary mt-4">
-                Submit
-              </button>
+              <button type="submit" class="btn btn-dark mt-4">Submit</button>
             </form>
           </div>
         </div>
